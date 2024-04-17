@@ -1,0 +1,54 @@
+#let dicier(t) = {
+  text(font: "Dicier Round", size: 8pt)[#t]
+}
+
+#let name(nm) = {
+  text(size: 18pt)[#nm]
+}
+
+#let pitch(body) = {
+  text(size: 9pt, style: "italic", body)
+}
+
+#let nameAndTraits(directives) = {
+  grid(
+    columns: (1fr, 3fr),
+    rows: auto,
+    inset: 5pt,
+    stroke: 1pt + black,
+    [Name: #v(50pt)],
+    [Traits:],
+    grid.cell(colspan: 2, [
+      #align(top+left)[Directives:]
+      #directives
+    ])
+  )
+}
+
+#let moves(prelude: [], encounter: [], struggle: []) = [
+  #set text(size: 10pt)
+  #set par(linebreaks: "optimized")
+
+  = Moves
+  #grid(
+    columns: (1fr, 2fr, 2fr, 2fr),
+    rows: auto,
+    inset: 4pt,
+    stroke: 1pt + gray,
+    // Prelude
+    [*Prelude*],
+    grid.cell(colspan: 3, prelude),
+    // Encounter
+    [*Encounter*],
+    [_Miss_ #dicier[1 2 3]],
+    [_Partial_ #dicier[4 5]],
+    [_Hit_ #dicier[6]],
+    [],
+    encounter.miss,
+    encounter.partial,
+    encounter.hit,
+    // Struggle
+    [*Struggle*],
+    grid.cell(colspan: 3, struggle)
+    )
+]

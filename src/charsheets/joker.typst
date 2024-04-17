@@ -1,0 +1,38 @@
+#import("./charsheet.typst") 
+
+#charsheet.name[The Joker]
+
+#charsheet.pitch[
+  Just my luck: we're out in the black, nobody for parsecs, and I'm stuck with
+  the biggest bunch of squares in known space. If these tightasses don't lighten
+  up and learn to have some fun I'm gonna blow us all out the airlock.
+]
+
+#charsheet.nameAndTraits[
+  - You want to have fun and slack off.
+  - You must always do the fun, dangerous, or cool thing.
+  - You must never hesitate or think twice.
+]
+
+#charsheet.moves(
+  prelude: [
+    - Introduce your character.
+    - Mark a detail on the Setting or Mission
+  ],
+  encounter: (
+    miss: [
+      - Get got
+    ],
+    partial: [
+      - #lorem(19)
+    ],
+    hit: [
+      - #lorem(14)
+    ],
+  ),
+  struggle: [
+    - #lorem(10)
+    - #lorem(11)
+  ],
+)
+
