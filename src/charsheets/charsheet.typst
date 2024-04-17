@@ -1,6 +1,5 @@
-#let dicier(t) = {
-  text(font: "Dicier Round", size: 8pt)[#t]
-}
+#import("../util.typst")
+
 
 #let name(nm) = {
   text(size: 18pt)[#nm]
@@ -29,26 +28,52 @@
   #set text(size: 10pt)
   #set par(linebreaks: "optimized")
 
-  = Moves
   #grid(
-    columns: (1fr, 2fr, 2fr, 2fr),
+    columns: (2fr, 2fr, 2fr, 2fr),
     rows: auto,
-    inset: 4pt,
+    inset: 7pt,
     stroke: 1pt + gray,
+    [],
+    grid.cell(colspan: 3)[*Moves*],
     // Prelude
-    [*Prelude*],
+    [
+      *Prelude*
+
+      - Choose and make moves until you have none left, or until players agree that it makes sense to move to the Encounter Phase.
+    ],
     grid.cell(colspan: 3, prelude),
     // Encounter
-    [*Encounter*],
-    [_Miss_ #dicier[1 2 3]],
-    [_Partial_ #dicier[4 5]],
-    [_Hit_ #dicier[6]],
-    [],
+    grid.cell(rowspan: 2)[*Encounter*],
+    [_Miss_ #util.dicier[1 2 3]],
+    [_Partial_ #util.dicier[4 5]],
+    [_Hit_ #util.dicier[6]],
     encounter.miss,
     encounter.partial,
     encounter.hit,
     // Struggle
-    [*Struggle*],
+    [*Struggle*
+    
+    When rolling Escape or Calamity, fill
+    - 1 box on #util.dicier[1 2 3]
+    - 2 boxes on #util.dicier[4 5]
+    - 3 boxes on #util.dicier[6]
+    - 5 boxes on double #util.dicier[6]
+    ],
     grid.cell(colspan: 3, struggle)
     )
+]
+
+
+#let development(milestones) = align(bottom)[
+  #rect(
+    width: 100%,
+    stroke: 1pt + black,
+    inset: 7pt,
+  )[
+  When your scene does any of the following, cross it off.
+
+  #milestones
+
+  When you've crossed off at least three items, you may alter or remove one of your Directives.
+  ]
 ]

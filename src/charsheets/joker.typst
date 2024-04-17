@@ -1,4 +1,8 @@
+#import("./common.typst")
 #import("./charsheet.typst") 
+
+#set text(size: 10pt, font: "Grandstander")
+#set page(margin: 33pt)
 
 #charsheet.name[The Joker]
 
@@ -16,23 +20,32 @@
 
 #charsheet.moves(
   prelude: [
-    - Introduce your character.
-    - Mark a detail on the Setting or Mission
+    #common.introduce
+    #common.setting
   ],
   encounter: (
     miss: [
-      - Get got
+      - You are killed by the Threat. Put down this playbook. The Encounter phase is over. Begin the Struggle.
+
+      - Your constant joking or lack of attention jeapordizes the mission and/or your comrades. What happens to make such a mess? Increase tension by 3.
+
     ],
     partial: [
-      - #lorem(19)
+      - 
     ],
     hit: [
-      - #lorem(14)
+      - One of your harebrained diversions ends up actually being useful. How did _that_ happen?
     ],
   ),
   struggle: [
-    - #lorem(10)
-    - #lorem(11)
+    - In a moment of dire need, you're suddenly serious and competent. Roll 2d Escape and 2d Calamity.
+    - 
   ],
 )
 
+#charsheet.development[
+  - Illustrate one of your Traits after you've introduced it
+  - Let one of your Directives get you in trouble
+  - Incorporate a trait of the Setting, Mission, or Threat
+  - Incorporate a trait from one of your comrates
+]
