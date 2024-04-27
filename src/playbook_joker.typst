@@ -1,8 +1,8 @@
 #import("common_moves.typst")
 #import("utils_playbook.typst") as upb
+#import "theme.typst": theme
 
-#set text(size: 10pt, font: "Atkinson Hyperlegible")
-#set page(margin: 12mm)
+#show: theme
 
 #upb.name[The Joker]
 

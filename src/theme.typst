@@ -1,0 +1,5 @@
+#let theme(doc) = {
+  set text(size: 10pt, font: "Atkinson Hyperlegible")
+  set page(margin: 12mm)
+  doc
+}
