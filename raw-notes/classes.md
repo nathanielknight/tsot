@@ -1,0 +1,3 @@
+- Crewmember: generic person (who can evolve in interesting ways)
+- Synthetic: needs permission to make tiers of moves
+- 
