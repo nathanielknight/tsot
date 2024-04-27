@@ -1,0 +1,52 @@
+#import("common_moves.typst")
+#import("utils_playbook.typst") as upb
+
+#set text(size: 10pt, font: "Atkinson Hyperlegible")
+#set page(margin: 12mm)
+
+#upb.name[The Joker]
+
+#upb.pitch[
+  Just my luck: we're out in the black, nobody for parsecs, and I'm stuck with
+  the biggest bunch of squares in known space. If these tightasses don't lighten
+  up and learn to have some fun I'm gonna blow us all out the airlock.
+]
+
+#upb.nameAndTraits[
+  - You want to have fun and slack off.
+  - You must always do the fun, dangerous, or cool thing.
+  - You must never hesitate or think twice.
+]
+
+#upb.moves(
+  prelude: [
+    #common_moves.introduce
+  ],
+  encounter: (
+    miss: [
+      - You are killed by the Threat. Put down this playbook. The Encounter phase is over. Begin the Struggle.
+
+      - Your constant fooling around and lack of attention causes problems. What happens? Increase tension by 3.
+
+    ],
+    partial: [
+      - Stumble across something important that you don't recognize because you're too busy goofing off. Mark 1 Mission and mark a detail on the Threat Playbook. How does the audience realize what you missed?
+    ],
+    hit: [
+      - One of your harebrained diversions ends up actually being useful. How did _that_ happen? Mark 3 Mission.
+    ],
+  ),
+  struggle: [
+    - In a moment of dire need, you're suddenly serious and competent. Roll 3d Escape and 1d Calamity.
+
+    - Work towards escape with frantic energy or gallows humour. Roll 2d Escape and 3d Calamity. You can make this move as many times as it takes.
+  ],
+)
+
+#upb.development[
+  - Illustrate one of your Traits after you've introduced it
+  - Let one of your Directives get you in trouble
+  - Incorporate a trait of the Setting, Mission, or Threat
+  - Incorporate a trait from one of your comrates
+]
+
