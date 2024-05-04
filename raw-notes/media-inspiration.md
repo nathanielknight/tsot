@@ -5,14 +5,16 @@
 - Jurassic Park
 - The Thing 
 - Deep Blue Sea
+- Annihilation
+- Ex Machina 
 - Deep Rising
 - Leviathan
 - Super deep 
 - Annihilation 
 - Doom 
 - The Mummy 
-- Leviathan 
-- Ex Machina 
+- Transcendence
+- Damsel
 
 # Books
 
