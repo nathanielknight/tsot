@@ -3,6 +3,7 @@
 #import "theme.typst"
 
 #show: theme.playbook
+#set text(font: "Vollkorn")
 
 #upb.name[The Joker]
 
@@ -47,6 +48,6 @@
   - Illustrate one of your Traits after you've introduced it
   - Let one of your Directives get you in trouble
   - Incorporate a trait of the Setting, Mission, or Threat
-  - Incorporate a trait from one of your comrates
+  - Incorporate a trait from one of your comrades
 ]
 

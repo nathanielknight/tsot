@@ -2,9 +2,14 @@
   (exec caddy file-server --browse --listen "0.0.0.0:8088")
 )
 
+(task clean
+  "Remove all PDFs from this directory"
+  (exec find . -name "*.pdf" -delete))
+
 (task "build"
+  (empty-dir build/playbooks)
   (par
-    (exec typst compile src/playbook_joker.typst)
+    (exec typst compile src/playbook_joker.typst build/playbooks/joker.pdf)
   )
   (log "Build finished")
 )

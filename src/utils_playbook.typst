@@ -1,12 +1,17 @@
 #import("util.typst")
 
+#set text(font: "Fantasque Sans Mono")
+
 #let inset = 9pt
+
+#let text_np = t => text(font: "National Park", t)
+#let inline_header = hdr => text(font: "National Park", weight: "bold", hdr)
 
 #let name(nm) = {
   block(
     above: 0%,
     below: 8mm,
-    smallcaps(text(size: 8mm, weight: "bold")[#nm])
+    smallcaps(text(font: "National Park", size: 8mm, weight: "bold")[#nm])
   )
 }
 
@@ -22,12 +27,12 @@
     stroke: 0.14mm + black,
     grid.cell(rowspan: 2,
       [
-        *Directives*
+        #inline_header("Directives")
         #directives
       ]
     ),
-    [*Name*],
-    [*Traits*],
+    inline_header("Name"),
+    inline_header("Traits"),
   )
 }
 
@@ -41,10 +46,10 @@
     inset: inset,
     stroke: 0.14mm + gray,
     [],
-    grid.cell(colspan: 3)[*Moves*],
+    grid.cell(colspan: 3, inline_header("Moves")),
     // Prelude
     [
-      *Prelude*
+      #inline_header("Prelude")
 
       - Choose and make moves until you have none left, or until it makes sense to move to the Encounter Phase.
     ],
@@ -54,20 +59,20 @@
     ),
     // Encounter
     grid.cell(rowspan: 2)[
-      *Encounter*
+      #inline_header("Encounter")
       - Roll the crew's dice pool, reduced by Tension.
       - For negative dice, roll extra and take lowest.
       - Each player takes one die and makes a move based on its value.
       
     ],
-    [_Miss_ #util.dicier[1 2 3]],
-    [_Partial_ #util.dicier[4 5]],
-    [_Hit_ #util.dicier[6]],
+    [#util.dicier[1 2 3]],
+    [#util.dicier[4 5]],
+    [#util.dicier[6]],
     util.checklist(encounter.miss),
     util.checklist(encounter.partial),
     util.checklist(encounter.hit),
     // Struggle
-    [*Struggle*
+    [#inline_header("Struggle")
     
     When rolling Escape or Calamity, fill
     - 1 on #util.dicier[1 2 3]
