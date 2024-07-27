@@ -15,9 +15,34 @@
 - The Mummy 
 - Transcendence
 - Damsel
+- The Fly
+- Ravenous
+- The Abyss
+- Cabin in the Woods
+- Lifeforce
+- Underwater
+- Troll
+- Transcendence
+- The Mummy
+-
 
 # Books
 
-- The Murderbot Diaries
 - Dracula
+
+
+# Video Games
+
+- Subnautica
+- Halo?
+
+
+# To Watch
+
+- sphere
+- event horizon
+- screamers (prime)
+- silent running
+- logan's run
+
 
