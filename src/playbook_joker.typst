@@ -1,8 +1,8 @@
 #import("common_moves.typst")
 #import("utils_playbook.typst") as upb
-#import "theme.typst": theme
+#import "theme.typst"
 
-#show: theme
+#show: theme.playbook
 
 #upb.name[The Joker]
 

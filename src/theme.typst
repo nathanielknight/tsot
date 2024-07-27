@@ -1,5 +1,19 @@
-#let theme(doc) = {
-  set text(size: 10pt, font: "Atkinson Hyperlegible")
+#let common(doc) = {
+  set text(font: "Atkinson Hyperlegible")
+  doc
+}
+
+#let phase(doc) = {
+  set text(size: 12pt)
+  set page(margin: 36mm)
+  doc
+}
+
+
+#let playbook(doc) = {
+  set text(size: 10pt)
   set page(margin: 12mm)
   doc
 }
+
+

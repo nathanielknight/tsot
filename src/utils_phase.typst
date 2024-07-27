@@ -1,0 +1,10 @@
+#let title(t) = {
+  align(
+    center,
+    block(
+      above: 0%,
+      below: 8mm,
+      smallcaps(text(size: 8mm, weight: "bold")[#t])
+    )
+  )
+}

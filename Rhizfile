@@ -1,0 +1,10 @@
+(task "serve"
+  (exec caddy file-server --browse --listen "0.0.0.0:8088")
+)
+
+(task "build"
+  (par
+    (exec typst compile src/playbook_joker.typst)
+  )
+  (log "Build finished")
+)
