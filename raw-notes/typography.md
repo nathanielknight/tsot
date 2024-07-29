@@ -7,13 +7,11 @@ What that means is:
 - A serif font with a high x-height, tiny descenders, fairly even strokes, and little detail for the body text
   (like the body text in [this document](https://www.nasa.gov/wp-content/uploads/static/history/alsj/LM10HandbookVol1.pdf))
 
-Examples of the header font would be:
+The fonts I chose are
 
-- [Routed Gothic Font](https://webonastick.com/fonts/routed-gothic/)
 - [National Park Typeface](https://nationalparktypeface.com/)
-
-
-Body font candidates are:
-
+  for headers, and
 - [Vollkorn](https://fonts.google.com/specimen/Vollkorn?stroke=Serif&preview.text=Jackdaws%20love%20my%20big%20sphinx%20of%20quartz) (note: has small caps!)
-- [IBM Plex Serif](https://fonts.google.com/specimen/IBM+Plex+Serif)
+  for the body text.
+
+  I struggled to find a body font that had the right proportions that didn't have fine details. Many old style fonts have delicate serifs, stroke variation, or little flourishes that would look very strange in the kind of cheaply printed technical manual I'm trying to emulate. In the end, Vollkorn has the right proportions and its thick, even strokes emulate smudgy printed letters well enough.

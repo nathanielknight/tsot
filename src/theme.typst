@@ -1,5 +1,6 @@
 #let common(doc) = {
-  set text(font: "Atkinson Hyperlegible")
+  set text(font: "Vollkorn", weight: "regular")
+  show heading: it => text(font: "National Park", it)
   doc
 }
 
@@ -9,11 +10,9 @@
   doc
 }
 
-
 #let playbook(doc) = {
   set text(size: 10pt)
   set page(margin: 12mm)
   doc
 }
-
 
