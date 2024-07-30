@@ -47,3 +47,12 @@ These are the things TSOT isn't about; avoid the temptation of including them be
 - simulation
 - dread
 - bleed
+
+# Pacing
+
+If we're looking for a 1-2 hour play time, each player will get 5-8 moves.
+
+- Intro: 2 moves
+- Encounter: 2-4 moves
+- Struggle: 1-3 moves
+

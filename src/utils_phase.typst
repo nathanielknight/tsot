@@ -4,7 +4,7 @@
     block(
       above: 0%,
       below: 8mm,
-      smallcaps(text(size: 8mm, weight: "bold")[#t])
+      text(font: "National Park", size: 8mm, weight: "bold")[#t]
     )
   )
 }

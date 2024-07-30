@@ -2,8 +2,8 @@
 #import("utils_playbook.typst") as upb
 #import "theme.typst"
 
+#show: theme.common
 #show: theme.playbook
-#set text(font: "Vollkorn")
 
 #upb.name[The Joker]
 
