@@ -8,8 +8,11 @@
 
 (task "build"
   (empty-dir build/playbooks)
+  (log "Building...")
   (par
+    (exec typst compile src/phase_prelude.typst build/the-prelude.pdf)
+    (exec typst compile src/phase_encounter.typst build/the-encounter.pdf)
     (exec typst compile src/playbook_joker.typst build/playbooks/joker.pdf)
   )
-  (log "Build finished")
+  (log "done")
 )
