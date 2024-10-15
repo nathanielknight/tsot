@@ -1,0 +1,9 @@
+(A) Convert elements lists from word doc
+Re-factor Playbook structure out of Joker into a Function
+Thanks and Credits (playtesters, fonts, art)
+authors note +extra
+consistent voice in cards (addressing character or player?)
+film terms glossary +extra
+how to play +core_rules
+media inspiration +extra
+name grid +extra
