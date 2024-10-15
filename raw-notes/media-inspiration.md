@@ -5,14 +5,12 @@
 - Jurassic Park
 - The Thing 
 - Deep Blue Sea
-- Annihilation
 - Ex Machina 
 - Deep Rising
 - Leviathan
 - Super deep 
 - Annihilation 
 - Doom 
-- The Mummy 
 - Transcendence
 - Damsel
 - The Fly
@@ -22,9 +20,9 @@
 - Lifeforce
 - Underwater
 - Troll
-- Transcendence
 - The Mummy
--
+- The Pyramid
+- Starget (kinda?)
 
 # Books
 
@@ -39,10 +37,18 @@
 
 # To Watch
 
-- sphere
-- event horizon
+- sphere (dvd)
+- event horizon (dvd)
 - screamers (prime)
 - silent running
 - logan's run
 
 
+# Explicitly not
+
+- invasion movies, supernatural or otherwise
+  - Invasion of the body snatchers
+  - Prey
+  - Slither
+  - .etc.
+- 
