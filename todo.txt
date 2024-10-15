@@ -1,7 +1,9 @@
-(A) Convert elements lists from word doc
-Re-factor Playbook structure out of Joker into a Function
-Thanks and Credits (playtesters, fonts, art)
-authors note +extra
+(A) Threat Encounter Cards
+(A) Threat Struggle Cards
+(A) Crew Struggle Cards
+(B) Convert elements lists from word doc
+Thanks and Credits (playtesters, fonts, art?)
+authors note +extra (inspiration, )
 consistent voice in cards (addressing character or player?)
 film terms glossary +extra
 how to play +core_rules
